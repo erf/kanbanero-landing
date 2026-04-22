@@ -145,6 +145,48 @@ kbd {
 /* cta-bottom */
 .cta-bottom { text-align: center; padding-bottom: 64px; }
 
+/* faq */
+.faq h2 { font-size: 26px; margin: 0 0 28px; }
+.faq details {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-bottom: 10px;
+}
+.faq details[open] { border-color: var(--accent); }
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  list-style: none;
+  position: relative;
+  padding-right: 24px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 18px;
+}
+.faq details[open] summary::after { content: "−"; }
+.faq details p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.faq details code {
+  background: var(--border);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
 /* footer */
 footer {
   text-align: center;

@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Kanbanero — a private, local kanban board for macOS</title>
-<meta name="description" content="A minimal, fast and private kanban board for macOS. Boards are plain JSON files on your disk. No cloud, no accounts, no tracking." />
+<title>Kanbanero – Local Kanban Board for macOS (JSON, Offline, Private)</title>
+<meta name="description" content="Kanbanero is a minimal, offline kanban board for macOS. Boards are plain JSON files on your disk — no cloud, no accounts, no tracking. One-time purchase, $8.99." />
+<link rel="canonical" href="https://kanbanero.app/" />
 
 <!-- Open Graph -->
 <meta property="og:title" content="Kanbanero — a private, local kanban board for macOS" />
@@ -16,6 +17,32 @@
 
 <link rel="icon" type="image/png" href="images/icon.png" />
 <link rel="stylesheet" href="style.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Kanbanero",
+  "description": "A minimal, private, offline kanban board for macOS. Boards are stored as plain JSON files on your disk — no cloud, no accounts, no tracking.",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "macOS 12+",
+  "url": "https://kanbanero.app/",
+  "image": "https://kanbanero.app/images/og.png",
+  "downloadUrl": "https://apps.apple.com/app/kanbanero/id1645553955",
+  "softwareVersion": "1.0",
+  "offers": {
+    "@type": "Offer",
+    "price": "8.99",
+    "priceCurrency": "USD",
+    "category": "OneTimePurchase"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "apptakk",
+    "url": "https://apptakk.com/"
+  }
+}
+</script>
 </head>
 <body>
 
@@ -89,6 +116,123 @@
     <li><kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>?</kbd> — info view</li>
   </ul>
 </section>
+
+<section class="faq">
+  <h2>Frequently asked questions</h2>
+
+  <details>
+    <summary>Does Kanbanero work offline?</summary>
+    <p>Yes. Kanbanero is a native macOS app that runs entirely on your machine. It never needs an internet connection, never phones home, and never talks to a server.</p>
+  </details>
+
+  <details>
+    <summary>Where are my boards stored?</summary>
+    <p>In a folder you pick. Every board is a plain <code>.json</code> file you can open in any text editor, back up, diff, or commit to Git.</p>
+  </details>
+
+  <details>
+    <summary>Can I sync boards between Macs?</summary>
+    <p>Yes — just put your boards folder in iCloud Drive, Dropbox, Syncthing, or a Git repo. Kanbanero stays out of it: sync is whatever you already use.</p>
+  </details>
+
+  <details>
+    <summary>Can I use it with Git and pull requests?</summary>
+    <p>Absolutely. Because boards are JSON, you can check them into your project repo, review changes in diffs, and keep task state alongside your code.</p>
+  </details>
+
+  <details>
+    <summary>Is there a subscription?</summary>
+    <p>No. Kanbanero is a one-time $8.99 purchase on the Mac App Store. No subscriptions, no accounts, no in-app purchases.</p>
+  </details>
+
+  <details>
+    <summary>Does it work on Apple Silicon and Intel?</summary>
+    <p>Yes — it's a universal binary and requires macOS 12 or later.</p>
+  </details>
+
+  <details>
+    <summary>Is there an iOS, Windows, or Linux version?</summary>
+    <p>Not today. Kanbanero is macOS-only. Since boards are plain JSON, you can read and edit them from any platform with any text editor.</p>
+  </details>
+
+  <details>
+    <summary>Does Kanbanero track me or collect analytics?</summary>
+    <p>No. No accounts, no telemetry, no tracking. Your data stays on your disk.</p>
+  </details>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does Kanbanero work offline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Kanbanero is a native macOS app that runs entirely on your machine. It never needs an internet connection, never phones home, and never talks to a server."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are my boards stored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In a folder you pick. Every board is a plain .json file you can open in any text editor, back up, diff, or commit to Git."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I sync boards between Macs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — just put your boards folder in iCloud Drive, Dropbox, Syncthing, or a Git repo. Kanbanero stays out of it: sync is whatever you already use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use it with Git and pull requests?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Because boards are JSON, you can check them into your project repo, review changes in diffs, and keep task state alongside your code."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a subscription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Kanbanero is a one-time $8.99 purchase on the Mac App Store. No subscriptions, no accounts, no in-app purchases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work on Apple Silicon and Intel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — it's a universal binary and requires macOS 12 or later."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there an iOS, Windows, or Linux version?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not today. Kanbanero is macOS-only. Since boards are plain JSON, you can read and edit them from any platform with any text editor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Kanbanero track me or collect analytics?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. No accounts, no telemetry, no tracking. Your data stays on your disk."
+      }
+    }
+  ]
+}
+</script>
 
 <section class="cta-bottom">
   <h2>Own your tasks.</h2>
