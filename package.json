@@ -1,0 +1,11 @@
+{
+  "name": "kanbanero-landing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "og": "node scripts/render-og.mjs"
+  },
+  "devDependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}

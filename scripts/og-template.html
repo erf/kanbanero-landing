@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Kanbanero OG</title>
+<style>
+  :root {
+    --bg: #fafaf7;
+    --fg: #1a1a1a;
+    --muted: #5a5a5a;
+    --accent: #e14d2a;
+    --border: #ececec;
+    --card: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.4 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .card {
+    width: 1200px;
+    height: 630px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 520px 1fr;
+    align-items: center;
+    padding: 72px 72px 160px;
+    gap: 40px;
+    background:
+      radial-gradient(1200px 600px at 110% -20%, rgba(225, 77, 42, 0.10), transparent 60%),
+      radial-gradient(800px 500px at -10% 120%, rgba(225, 77, 42, 0.08), transparent 60%),
+      var(--bg);
+  }
+
+  /* Left: branding — one tight vertical block */
+  .brand .icon {
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 24px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.10), 0 2px 6px rgba(0,0,0,0.06);
+  }
+  .brand h1 {
+    font-size: 76px;
+    line-height: 1.0;
+    letter-spacing: -0.028em;
+    margin: 0 0 20px;
+    font-weight: 700;
+  }
+  .brand .tagline {
+    font-size: 26px;
+    line-height: 1.35;
+    color: var(--fg);
+    margin: 0;
+    max-width: 480px;
+    letter-spacing: -0.005em;
+  }
+  .brand .tagline strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* Right: app screenshot, zoomed 2x and tilted like a product shot */
+  .shot-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .shot-frame {
+    width: 620px;
+    height: 460px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow:
+      0 30px 60px rgba(0,0,0,0.18),
+      0 10px 24px rgba(0,0,0,0.08);
+    transform: rotate(-2deg);
+    background: #fafaf7;
+    overflow: hidden;
+    position: relative;
+  }
+  .shot {
+    position: absolute;
+    width: 1240px;
+    height: auto;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+
+  /* Bottom anchor: just the URL, with a habanero underline */
+  .url {
+    position: absolute;
+    left: 72px;
+    bottom: 56px;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--fg);
+    letter-spacing: -0.01em;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--accent);
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="brand">
+      <img class="icon" src="../images/icon.png" alt="" />
+      <h1>Kanbanero</h1>
+      <p class="tagline">A minimal, <strong>private</strong> kanban board for macOS — your boards are JSON files on your disk.</p>
+    </div>
+    <div class="shot-wrap">
+      <div class="shot-frame">
+        <img class="shot" src="../images/screenshot-1.png" alt="" />
+      </div>
+    </div>
+    <div class="url">kanbanero.app</div>
+  </div>
+</body>
+</html>
