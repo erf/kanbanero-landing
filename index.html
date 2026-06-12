@@ -108,6 +108,14 @@
   </div>
 </section>
 
+<dialog id="lightbox" aria-label="Screenshot preview">
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <button class="lb-prev" aria-label="Previous">&#8592;</button>
+  <img id="lb-img" src="" alt="" />
+  <button class="lb-next" aria-label="Next">&#8594;</button>
+  <span class="lb-counter" id="lb-counter"></span>
+</dialog>
+
 <section class="shortcuts">
   <h2>Shortcuts</h2>
   <ul>
@@ -249,6 +257,39 @@
     <a href="mailto:apptakk@gmail.com">Feedback</a>
   </p>
 </footer>
+
+<script>
+(function () {
+  var imgs = Array.from(document.querySelectorAll('.shots img'));
+  var dialog = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lb-img');
+  var lbCounter = document.getElementById('lb-counter');
+  var current = 0;
+
+  function show(index) {
+    current = (index + imgs.length) % imgs.length;
+    lbImg.src = imgs[current].src;
+    lbImg.alt = imgs[current].alt;
+    lbCounter.textContent = (current + 1) + '\u2009/\u2009' + imgs.length;
+  }
+
+  imgs.forEach(function (img, i) {
+    img.addEventListener('click', function () { show(i); dialog.showModal(); });
+  });
+
+  document.querySelector('.lb-prev').addEventListener('click', function () { show(current - 1); });
+  document.querySelector('.lb-next').addEventListener('click', function () { show(current + 1); });
+  document.querySelector('.lb-close').addEventListener('click', function () { dialog.close(); });
+
+  dialog.addEventListener('click', function (e) { if (e.target === dialog) dialog.close(); });
+
+  document.addEventListener('keydown', function (e) {
+    if (!dialog.open) return;
+    if (e.key === 'ArrowLeft') show(current - 1);
+    if (e.key === 'ArrowRight') show(current + 1);
+  });
+})();
+</script>
 
 </body>
 </html>
