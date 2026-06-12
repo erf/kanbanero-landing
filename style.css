@@ -45,7 +45,7 @@ section, header, footer {
 .hero { text-align: center; padding-top: 72px; }
 .hero .icon { border-radius: 22px; display: block; margin: 0 auto 20px; }
 .hero h1 { font-size: 44px; margin: 0 0 12px; }
-.hero .tagline { color: var(--muted); font-size: 18px; margin: 0 auto 28px; max-width: 560px; }
+.hero .tagline { color: var(--muted); font-size: 18px; margin: 0 auto 28px; max-width: 560px; line-height: 2; }
 .hero .sub { color: var(--muted); font-size: 12px; margin-top: 24px; opacity: 0.7; }
 
 .price {
@@ -81,6 +81,11 @@ section, header, footer {
   background: #000;
   display: block;
 }
+
+/* how it works */
+.how-it-works { padding-bottom: 0; }
+.how-it-works p { color: var(--muted); font-size: 16px; max-width: 680px; margin: 0 0 16px; }
+.how-it-works p:last-child { margin-bottom: 0; }
 
 /* features */
 .features h2, .screenshots h2, .shortcuts h2, .cta-bottom h2 {
