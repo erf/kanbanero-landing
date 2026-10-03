@@ -6,7 +6,7 @@
 
 Kanbanero stores boards and tasks in files on your Mac. Creating and editing them works offline. The app does not collect analytics or track usage, and it does not upload your boards or tasks to a server.
 
-Fonts are bundled with the app and are not downloaded at runtime. The app also uses Apple's App Store review prompt.
+Kanbanero is not granted permission to make internet connections.
 
 ## This website
 
