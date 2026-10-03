@@ -9,13 +9,13 @@
 
 <!-- Open Graph -->
 <meta property="og:title" content="Kanbanero - a lite kanban app for macOS" />
-<meta property="og:description" content="Simple, beautiful, and local. Each board is a plain YAML file on your disk." />
+<meta property="og:description" content="Kanban boards stored as plain YAML files on your Mac. Works offline." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kanbanero.app/" />
 <meta property="og:image" content="https://kanbanero.app/images/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Kanbanero - a lite kanban app for macOS" />
-<meta name="twitter:description" content="Simple, beautiful, and local. Each board is a plain YAML file on your disk." />
+<meta name="twitter:description" content="Kanban boards stored as plain YAML files on your Mac. Works offline." />
 <meta name="twitter:image" content="https://kanbanero.app/images/og.png" />
 
 <link rel="icon" type="image/png" href="images/icon.png" />
@@ -52,7 +52,7 @@
 <header class="hero">
   <img class="icon" src="images/icon.png" alt="Kanbanero icon" width="96" height="96" />
   <h1>Kanbanero</h1>
-  <p class="tagline">A lite kanban app for macOS.<br/>Manage projects and tasks on boards and columns.<br />Drag tasks forward as they progress.<br/>Each board is a plain YAML file on your disk.</p>
+  <p class="tagline">A kanban app for macOS.<br />Organize projects and tasks. Works offline with files stored on your Mac.</p>
 
   <div class="cta">
     <a class="btn primary" href="https://apps.apple.com/app/kanbanero/id1645553955">Get it on the Mac App Store</a>
@@ -68,37 +68,44 @@
   </video>
 </section>
 
-<section class="how-it-works">
-  <p>Kanbanero organises work into boards, columns, and tasks. Add columns for the stages of your workflow: To Do, In Progress, Done, or whatever fits. Drag tasks between them as work moves forward. Click any task to edit it. <kbd>⌘</kbd><kbd>N</kbd> creates a new task instantly.</p>
-  <p>Columns can be renamed and reordered by dragging. Save any board as a template to reuse across projects. When you have multiple boards, <kbd>⌘</kbd><kbd>L</kbd> brings up the project list so you can switch without losing focus. Appearance is customisable too: light and dark themes, fonts, colour accents, and animated shader backgrounds.</p>
+<section class="testimonial" aria-labelledby="review-title">
+  <figure>
+    <p class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+    <h2 id="review-title">“No-Nonsense Kanban for Your Mac 👌”</h2>
+    <blockquote>
+      <p>“Wanted a local storage, offline mode, no subscription kanban to organize my projects and track tasks. Got that with this and a beautiful, simple design … Great app overall, buy this.”</p>
+    </blockquote>
+    <figcaption>— <bdi>作 mt</bdi>, <a href="https://apps.apple.com/app/kanbanero/id1645553955">Mac App Store review</a></figcaption>
+  </figure>
 </section>
 
 <section class="features">
-  <h2>Why Kanbanero?</h2>
+  <h2>Features</h2>
+  <p class="features-intro">Create boards with columns such as To Do, In Progress, and Done. Drag tasks between columns to update their status.</p>
   <div class="grid">
     <div>
-      <h3>Private by design</h3>
-      <p>No accounts. No cloud. No tracking. Your boards never leave your machine unless you choose to sync them.</p>
+      <h3>Local storage</h3>
+      <p>Your boards are stored on your Mac. No accounts or tracking.</p>
     </div>
     <div>
       <h3>Plain YAML files</h3>
-      <p>Every board is a readable YAML file in a folder you pick. Back it up, diff it, script it, stash it in Git.</p>
+      <p>Boards are YAML or JSON files in a folder you choose. Edit, back up, or track them in Git.</p>
     </div>
     <div>
-      <h3>Built for focus</h3>
-      <p>Minimal UI. Smooth drag and drop. Light and dark themes. No notifications, no nagging, no upsells.</p>
+      <h3>Appearance</h3>
+      <p>Choose light or dark mode, fonts, color accents, and animated shader backgrounds.</p>
     </div>
     <div>
-      <h3>Fast & local</h3>
-      <p>A real Mac app. Opens instantly. Works offline. Keyboard shortcuts for common actions.</p>
+      <h3>Works offline</h3>
+      <p>Create and edit boards without an internet connection.</p>
     </div>
     <div>
-      <h3>Made for developers</h3>
-      <p>Store boards in your project repo. Diff them on PRs. Edit them in your editor if you want. It's just YAML, or JSON if you prefer scripting against it.</p>
+      <h3>One-time purchase</h3>
+      <p>$8.99 on the Mac App Store. No subscription or in-app purchases.</p>
     </div>
     <div>
       <h3>Templates & projects</h3>
-      <p>Save any board as a template. Spin up new projects in seconds. Switch between boards with <code>⌘ L</code>.</p>
+      <p>Save boards as templates for new projects. Switch between boards from the project list.</p>
     </div>
   </div>
 </section>
@@ -121,59 +128,54 @@
   <span class="lb-counter" id="lb-counter"></span>
 </dialog>
 
-<section class="shortcuts">
-  <h2>Shortcuts</h2>
-  <ul>
-    <li><kbd>⌘</kbd> <kbd>L</kbd>: show / hide project list</li>
-    <li><kbd>⌘</kbd> <kbd>T</kbd>: toggle dark / light theme</li>
-    <li><kbd>⌘</kbd> <kbd>O</kbd>: set project folder</li>
-    <li><kbd>⌘</kbd> <kbd>↵</kbd>: save task</li>
-    <li><kbd>⌘</kbd> <kbd>+</kbd>: add a new task</li>
-    <li><kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>?</kbd>: info view</li>
-  </ul>
-</section>
-
 <section class="faq">
   <h2>Frequently asked questions</h2>
 
   <details>
     <summary>Does Kanbanero work offline?</summary>
-    <p>Yes. Kanbanero is a Mac app that runs entirely on your machine. It never needs an internet connection, never phones home, and never talks to a server.</p>
+    <p>Yes. Creating and editing boards does not require an internet connection.</p>
   </details>
 
   <details>
     <summary>Where are my boards stored?</summary>
-    <p>In a folder you pick. Every board is a plain <code>.yaml</code> file you can open in any text editor, back up, diff, or commit to Git. Prefer JSON? Pick <code>.json</code> in Settings → Storage.</p>
-  </details>
-
-  <details>
-    <summary>Can I sync boards between Macs?</summary>
-    <p>Yes. Just put your boards folder in iCloud Drive, Dropbox, Syncthing, or a Git repo. Kanbanero stays out of it: sync is whatever you already use.</p>
+    <p>In a folder you choose. Each board is a <code>.yaml</code> file. You can select <code>.json</code> instead in Settings → Storage.</p>
   </details>
 
   <details>
     <summary>Can I use it with Git and pull requests?</summary>
-    <p>Absolutely. Because boards are YAML, you can check them into your project repo, review changes in diffs, and keep task state alongside your code.</p>
+    <p>Yes. Board files can be committed to a Git repository and reviewed in diffs or pull requests.</p>
   </details>
 
   <details>
     <summary>Is there a subscription?</summary>
-    <p>No. Kanbanero is a one-time $8.99 purchase on the Mac App Store. No subscriptions, no accounts, no in-app purchases.</p>
+    <p>No. Kanbanero costs $8.99 as a one-time purchase on the Mac App Store. There are no in-app purchases.</p>
   </details>
 
   <details>
     <summary>Does it work on Apple Silicon and Intel?</summary>
-    <p>Yes, it's a universal binary and requires macOS 12 or later.</p>
+    <p>Yes. Kanbanero supports both Apple Silicon and Intel Macs running macOS 12 or later.</p>
   </details>
 
   <details>
     <summary>Is there an iOS, Windows, or Linux version?</summary>
-    <p>Not today. Kanbanero is macOS-only. Since boards are plain YAML, you can read and edit them from any platform with any text editor.</p>
+    <p>No. Kanbanero is available for macOS only. Board files can be opened in a text editor on other platforms.</p>
   </details>
 
   <details>
     <summary>Does Kanbanero track me or collect analytics?</summary>
-    <p>No. No accounts, no telemetry, no tracking. Your data stays on your disk.</p>
+    <p>No. Kanbanero does not collect analytics or track usage.</p>
+  </details>
+
+  <details class="shortcuts">
+    <summary>What keyboard shortcuts can I use?</summary>
+    <ul>
+      <li><kbd>⌘</kbd> <kbd>N</kbd>: add a new task</li>
+      <li><kbd>⌘</kbd> <kbd>↵</kbd>: save task</li>
+      <li><kbd>⌘</kbd> <kbd>L</kbd>: show / hide project list</li>
+      <li><kbd>⌘</kbd> <kbd>T</kbd>: toggle dark / light theme</li>
+      <li><kbd>⌘</kbd> <kbd>O</kbd>: set project folder</li>
+      <li><kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>?</kbd>: info view</li>
+    </ul>
   </details>
 </section>
 
@@ -187,7 +189,7 @@
       "name": "Does Kanbanero work offline?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Kanbanero is a Mac app that runs entirely on your machine. It never needs an internet connection, never phones home, and never talks to a server."
+        "text": "Yes. Creating and editing boards does not require an internet connection."
       }
     },
     {
@@ -195,15 +197,7 @@
       "name": "Where are my boards stored?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In a folder you pick. Every board is a plain .yaml file you can open in any text editor, back up, diff, or commit to Git. Prefer JSON? Pick .json in Settings → Storage."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I sync boards between Macs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Just put your boards folder in iCloud Drive, Dropbox, Syncthing, or a Git repo. Kanbanero stays out of it: sync is whatever you already use."
+        "text": "In a folder you choose. Each board is a .yaml file. You can select .json instead in Settings → Storage."
       }
     },
     {
@@ -211,7 +205,7 @@
       "name": "Can I use it with Git and pull requests?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Because boards are YAML, you can check them into your project repo, review changes in diffs, and keep task state alongside your code."
+        "text": "Yes. Board files can be committed to a Git repository and reviewed in diffs or pull requests."
       }
     },
     {
@@ -219,7 +213,7 @@
       "name": "Is there a subscription?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Kanbanero is a one-time $8.99 purchase on the Mac App Store. No subscriptions, no accounts, no in-app purchases."
+        "text": "No. Kanbanero costs $8.99 as a one-time purchase on the Mac App Store. There are no in-app purchases."
       }
     },
     {
@@ -227,7 +221,7 @@
       "name": "Does it work on Apple Silicon and Intel?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, it's a universal binary and requires macOS 12 or later."
+        "text": "Yes. Kanbanero supports both Apple Silicon and Intel Macs running macOS 12 or later."
       }
     },
     {
@@ -235,7 +229,7 @@
       "name": "Is there an iOS, Windows, or Linux version?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not today. Kanbanero is macOS-only. Since boards are plain YAML, you can read and edit them from any platform with any text editor."
+        "text": "No. Kanbanero is available for macOS only. Board files can be opened in a text editor on other platforms."
       }
     },
     {
@@ -243,7 +237,15 @@
       "name": "Does Kanbanero track me or collect analytics?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. No accounts, no telemetry, no tracking. Your data stays on your disk."
+        "text": "No. Kanbanero does not collect analytics or track usage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What keyboard shortcuts can I use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "⌘ N: add a new task; ⌘ ↵: save task; ⌘ L: show / hide project list; ⌘ T: toggle dark / light theme; ⌘ O: set project folder; ⌘ ⇧ ?: info view."
       }
     }
   ]
@@ -251,7 +253,7 @@
 </script>
 
 <section class="cta-bottom">
-  <h2>Own your tasks.</h2>
+  <h2>Get Kanbanero</h2>
   <a class="btn primary" href="https://apps.apple.com/app/kanbanero/id1645553955">Get Kanbanero on the Mac App Store</a>
   <p class="price">$8.99 · one-time purchase</p>
 </section>
