@@ -1,9 +1,17 @@
 # Kanbanero — Privacy Policy
 
-*Last updated: May 2026*
+*Last updated: October 3, 2026*
 
-Kanbanero does not collect, transmit, or share any personal data.
+## The app
 
-All your boards and tasks are stored on your local device.
+Kanbanero stores boards and tasks in files on your Mac. Creating and editing them works offline. The app does not collect analytics or track usage, and it does not upload your boards or tasks to a server.
+
+Fonts are bundled with the app. The font library can download a font if it is unavailable locally. The app also uses Apple's App Store review prompt.
+
+## This website
+
+This website does not use analytics or tracking cookies. It is hosted on GitHub Pages, which logs visitors' IP addresses for security purposes. See [GitHub's documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) and [Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+
+## Contact
 
 *Erlend Lind Madsen — apptakk@gmail.com — Norway*
