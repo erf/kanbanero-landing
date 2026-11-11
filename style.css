@@ -116,7 +116,8 @@ section, header, footer {
   letter-spacing: 3px;
   margin: 0 0 12px;
 }
-.testimonial h2 { font-size: 22px; margin: 0 0 12px; }
+.testimonial figure + figure { margin-top: 16px; }
+.testimonial h3 { font-size: 22px; margin: 0 0 12px; }
 .testimonial blockquote { margin: 0; }
 .testimonial blockquote p { font-size: 18px; line-height: 1.7; margin: 0; }
 .testimonial figcaption { color: var(--muted); font-size: 14px; margin-top: 16px; }
