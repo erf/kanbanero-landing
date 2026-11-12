@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Kanbanero - a lite kanban app for macOS (local, YAML, private)</title>
-<meta name="description" content="Kanbanero is a lite kanban app for macOS. Each board is a plain YAML file on your local disk. No cloud, no accounts, no tracking. One-time purchase, $8.99." />
+<meta name="description" content="Kanbanero is a lite kanban app for macOS. Each board is a Git-friendly YAML file on your Mac. No cloud, no accounts, no tracking. One-time purchase, $8.99." />
 <link rel="canonical" href="https://kanbanero.app/" />
 
 <!-- Open Graph -->
@@ -32,7 +32,8 @@
   "url": "https://kanbanero.app/",
   "image": "https://kanbanero.app/images/og.png",
   "downloadUrl": "https://apps.apple.com/app/kanbanero/id1645553955",
-  "softwareVersion": "1.0",
+  "softwareVersion": "2.11.0",
+  "inLanguage": ["en", "de", "es", "fr", "ja", "nb"],
   "offers": {
     "@type": "Offer",
     "price": "8.99",
@@ -69,6 +70,11 @@
   </video>
 </section>
 
+<section class="intro">
+  <p>Kanbanero is a kanban board for your Mac. Tasks sit in columns like <em>To do</em>, <em>Doing</em> and <em>Done</em>, and you drag them along as the work moves forward.</p>
+  <p>There's no cloud and no account. Each board is a plain YAML file in a folder you choose, so your data stays yours. Back it up, edit it in a text editor, or keep it in Git.</p>
+</section>
+
 <section class="testimonial" aria-label="Reviews">
   <figure>
     <p class="review-stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
@@ -92,18 +98,48 @@
   <h2>Features</h2>
   <div class="grid">
     <div>
-      <h3>Works offline</h3>
-      <p>Boards are stored as YAML or JSON files in a folder you choose.</p>
+      <h3>Plain files, no cloud</h3>
+      <p>Every board is a YAML or JSON file in a folder you choose. Works offline, no account needed.</p>
     </div>
     <div>
-      <h3>Boards & templates</h3>
-      <p>Organize projects into boards and columns. Save boards as templates for reuse.</p>
+      <h3>Git-friendly</h3>
+      <p>Commit boards to a repository and review changes in diffs and pull requests.</p>
     </div>
     <div>
-      <h3>Appearance</h3>
-      <p>Choose light or dark mode, fonts, color accents, and animated shader backgrounds.</p>
+      <h3>Boards &amp; templates</h3>
+      <p>Keep a board per project, pin the ones you use most, and make any board the template for new ones.</p>
+    </div>
+    <div>
+      <h3>Drag, drop, collapse</h3>
+      <p>Move tasks and columns around, and fold away the columns you don't need right now.</p>
+    </div>
+    <div>
+      <h3>Keyboard shortcuts</h3>
+      <p>Add a task with <kbd>⌘</kbd> <kbd>N</kbd>, save it with <kbd>⌘</kbd> <kbd>↵</kbd>, and toggle the project list with <kbd>⌘</kbd> <kbd>L</kbd>.</p>
+    </div>
+    <div>
+      <h3>Make it yours</h3>
+      <p>Light or dark mode, fonts, accent colors and subtle animated backgrounds. Available in multiple languages.</p>
     </div>
   </div>
+</section>
+
+<section class="file">
+  <h2>Your board is just a file</h2>
+  <p>This is what a board looks like on disk. Readable, diffable, and easy to edit by hand.</p>
+  <pre><code>name: Website
+columns:
+  - name: To do
+    tasks:
+      - Write landing page copy
+      - Update the FAQ
+  - name: Doing
+    tasks:
+      - New screenshots
+  - name: Done
+    collapsed: true
+    tasks:
+      - Release 2.11</code></pre>
 </section>
 
 <section class="screenshots">
