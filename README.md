@@ -16,7 +16,7 @@ python3 -m http.server 8000
 Place these files in `images/`:
 
 - `icon.png` — 512×512 app icon (or larger, square)
-- `screenshot-1.png` … `screenshot-4.png` — the 4 App Store screenshots
+- `screenshot-1.jpg` … `screenshot-5.jpg` — the 5 App Store screenshots (en-US, as JPEG)
 - `preview.mp4` — the App Store preview video
 - `og.png` — 1200×630 social share image (generated — see below)
 
@@ -25,7 +25,7 @@ Filenames are referenced in `index.html`.
 ## Regenerating the OG image
 
 The social-share image at `images/og.png` is composed from the app icon,
-a zoomed crop of `screenshot-1.png`, and the wordmark/tagline. It's built
+a zoomed crop of the window in `screenshot-1.jpg`, and the wordmark/tagline. It's built
 with a tiny offline script (the only dependency in the repo):
 
 ```
