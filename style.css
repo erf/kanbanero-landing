@@ -54,6 +54,9 @@ section, header, footer {
   margin: 12px 0 0;
   opacity: 0.85;
 }
+.price.sale { line-height: 1.6; }
+.price.sale s { color: var(--muted); }
+.price.sale strong { color: var(--accent); font-size: 15px; }
 
 .cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
