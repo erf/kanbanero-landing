@@ -298,6 +298,8 @@ footer {
   padding-bottom: 40px;
 }
 footer a { color: var(--muted); }
+footer .badges { margin: 16px 0 0; }
+footer .badges img { display: inline-block; vertical-align: middle; }
 
 /* intro */
 .intro { padding-bottom: 24px; }
