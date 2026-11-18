@@ -32,7 +32,7 @@
   "url": "https://kanbanero.app/",
   "image": "https://kanbanero.app/images/og.png",
   "downloadUrl": "https://apps.apple.com/app/kanbanero/id1645553955",
-  "softwareVersion": "2.11.0",
+  "softwareVersion": "2.13.0",
   "inLanguage": ["en", "de", "es", "fr", "ja", "nb"],
   "offers": {
     "@type": "Offer",
@@ -103,8 +103,8 @@
       <p>Every board is a YAML or JSON file in a folder you choose. Works offline, no account needed.</p>
     </div>
     <div>
-      <h3>Git-friendly</h3>
-      <p>Commit boards to a repository and review changes in diffs and pull requests.</p>
+      <h3>Always in sync with your files</h3>
+      <p>Kanbanero watches the project folder. Edit a board in any editor, pull with Git, or let an AI agent update it, and the board updates right away.</p>
     </div>
     <div>
       <h3>Boards &amp; templates</h3>
@@ -181,6 +181,11 @@ columns:
   </details>
 
   <details>
+    <summary>Can I edit board files outside the app?</summary>
+    <p>Yes. Kanbanero watches the project folder and updates open boards when a file changes, whether you edit it in a text editor, pull with Git, or an AI agent writes to it.</p>
+  </details>
+
+  <details>
     <summary>Is there a subscription?</summary>
     <p>No. Kanbanero costs $8.99 as a one-time purchase on the Mac App Store. There are no in-app purchases.</p>
   </details>
@@ -206,6 +211,7 @@ columns:
       <li><kbd>⌘</kbd> <kbd>N</kbd>: add a new task</li>
       <li><kbd>⌘</kbd> <kbd>↵</kbd>: save task</li>
       <li><kbd>⌘</kbd> <kbd>L</kbd>: show / hide project list</li>
+      <li><kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>T</kbd>: show / hide toolbar</li>
       <li><kbd>⌘</kbd> <kbd>T</kbd>: toggle dark / light theme</li>
       <li><kbd>⌘</kbd> <kbd>O</kbd>: set project folder</li>
       <li><kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>?</kbd>: info view</li>
@@ -240,6 +246,14 @@ columns:
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. Board files can be committed to a Git repository and reviewed in diffs or pull requests."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I edit board files outside the app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Kanbanero watches the project folder and updates open boards when a file changes, whether you edit it in a text editor, pull with Git, or an AI agent writes to it."
       }
     },
     {
