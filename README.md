@@ -16,7 +16,7 @@ python3 -m http.server 8000
 Place these files in `images/`:
 
 - `icon.png` — 512×512 app icon (or larger, square)
-- `screenshot-1.jpg` … `screenshot-5.jpg` — the 5 App Store screenshots (en-US, as JPEG)
+- `screenshot-1.jpg` … `screenshot-6.jpg` — the 6 App Store screenshots (en-US, as JPEG)
 - `preview.mp4` — the App Store preview video
 - `og.png` — 1200×630 social share image (generated — see below)
 
