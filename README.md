@@ -25,7 +25,7 @@ Filenames are referenced in `index.html`.
 ## Regenerating the OG image
 
 The social-share image at `images/og.png` is composed from the app icon,
-a zoomed crop of the window in `screenshot-1.jpg`, and the wordmark/tagline. It's built
+a zoomed crop of the window in `screenshot-2.jpg` (the project list), and the wordmark/tagline. It's built
 with a tiny offline script (the only dependency in the repo):
 
 ```
